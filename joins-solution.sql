@@ -25,5 +25,8 @@ JOIN "addresses" on "orders"."address_id"="addresses"."id"
 JOIN "customers" ON "customers"."id"="addresses"."customer_id" GROUP BY "customer_id"; 
 
 
---6. How many customers do we have?
+-- 6. How many customers do we have?
 SELECT count(*) from "customers";
+
+-- 7. How many products do we carry?
+SELECT count(*) from "products";
